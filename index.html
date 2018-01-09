@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    
+    <title>Vid.io</title>
+    
+    <!-- Meta Data -->
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="The UI Design for a Video Sharing Platform Using HTML and CSS.">
+    
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    
+    <!-- Font Awesome 5 CDN -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Poppins:500|Roboto:500" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  
+  <body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <span class="open-slide">
+        <a href="#" onclick="openSideMenu()">
+          <i class="fas fa-bars"></i>   <!-- You could also use an SVG in HTML5. -->
+        </a>
+      </span>
+      
+      <ul class="navbar-nav">
+        <li id="signin"><a href="#">Sign In</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Side Menu. The ID is used to refer to it in the Javascript. -->
+    <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">Upload</a>
+      <a href="#">My Profile<br><br></a>
+      <a href="#">Subscriptions</a>
+      <a href="#">Categories</a>
+    </div>
+    
+    <div class="fluid">
+      <div class="head">
+      <h1 class="title">VID.IO</h1>
+      <p class="lead">Upload - Watch - Share</p>
+      </div>
+    </div>
+    
+    <!-- Javascript for Side Menu. -->
+    <script>
+      function openSideMenu(){
+        document.getElementById("side-menu").style.width="250px";
+        document.getElementById("container").style.marginLeft="250px";
+      }
+      
+       function closeSideMenu(){
+        document.getElementById("side-menu").style.width="0";
+        document.getElementById("container").style.marginLeft="0";
+      }
+    </script>
+    
+    <!-- Optional Javascript for Bootstrap Components -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    
+  </body>
+  
+</html>
