@@ -1,9 +1,9 @@
 body {
-  background-color: #ecf0f1;
+  background-color: #ECF0F1;
 }
 
 .navbar {
-  background-color: #1abc9c;
+  background-color: #34495E;
   overflow: hidden;
   height: 50px;
 }
@@ -49,7 +49,7 @@ body {
 }
 
 #signin {
-  font-family: 'Roboto', Sans-Serif;
+  font-family: 'Poppins', Sans-Serif;
 }
 
 #signin a {
