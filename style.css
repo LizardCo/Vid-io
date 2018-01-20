@@ -59,6 +59,7 @@ body {
 .jumbotron {
   background-color: #2C3E50 !important;
   text-align: center;
+  border-radius: 0;
   margin-bottom: 0;
 }
 
